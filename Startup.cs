@@ -33,7 +33,7 @@ namespace Shop
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();            
+            app.UseHttpsRedirection();  
 
             app.UseRouting();
 

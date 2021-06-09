@@ -57,7 +57,7 @@ public class CategoryController : ControllerBase
     
     [HttpPut]
     [Route("{id:int}")]
-    public async Task<ActionResult<List<Category>>> Put(
+    public async Task<ActionResult<Category>> Put(
         int id, 
         [FromBody]Category model,
         [FromServices]DataContext context
@@ -88,7 +88,7 @@ public class CategoryController : ControllerBase
         
     [HttpDelete]
     [Route("{id:int}")]
-    public async Task<ActionResult<List<Category>>> Delete(
+    public async Task<ActionResult<Category>> Delete(
         int id,
         [FromServices]DataContext context
     )
@@ -104,8 +104,7 @@ public class CategoryController : ControllerBase
             return Ok(new {message = "Categoria removida"});
         }
         catch (Exception)
-        {
-            
+        {            
             return BadRequest(new {message = "Não foi possível remover a categoria"});
         }   
     }

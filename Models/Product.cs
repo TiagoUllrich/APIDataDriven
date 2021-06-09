@@ -20,8 +20,8 @@ namespace Shop.Models
         public decimal Price { get; set; }
 
         [Required(ErrorMessage = "Este campo é obrigatório.")]
-        [Range(1, int.MaxValue, ErrorMessage = "O preço deve ser maior do que zero.")]
-        public decimal CategoryId { get; set; }
+        [Range(1, int.MaxValue, ErrorMessage = "Categoria inválida")]
+        public int CategoryId { get; set; }
         public Category Category { get; set; }
     }
 }
