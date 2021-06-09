@@ -5,7 +5,7 @@ namespace Shop.Models
     public class Product
     {
         [Key]
-        public long Int { get; set; }
+        public long Id { get; set; }
 
         [Required(ErrorMessage = "Este campo é obrigatório.")]
         [MaxLength(60, ErrorMessage = "Este campo deve conter entre 3 e 60 caracteres.")]
