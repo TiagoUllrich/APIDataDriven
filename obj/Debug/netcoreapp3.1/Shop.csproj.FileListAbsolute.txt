@@ -1,13 +1,11 @@
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Shop.exe
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Shop.deps.json
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Shop.runtimeconfig.json
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Shop.runtimeconfig.dev.json
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Shop.dll
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Shop.pdb
-C:\Projetos\XBalta\Shop\obj\Debug\netcoreapp3.1\Shop.csprojAssemblyReference.cache
 C:\Projetos\XBalta\Shop\obj\Debug\netcoreapp3.1\Shop.AssemblyInfoInputs.cache
 C:\Projetos\XBalta\Shop\obj\Debug\netcoreapp3.1\Shop.AssemblyInfo.cs
 C:\Projetos\XBalta\Shop\obj\Debug\netcoreapp3.1\Shop.csproj.CoreCompileInputs.cache
@@ -62,3 +60,6 @@ C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projetos\XBalta\Shop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projetos\XBalta\Shop\obj\Debug\netcoreapp3.1\Shop.csproj.AssemblyReference.cache
+C:\Projetos\XBalta\Shop\obj\Debug\netcoreapp3.1\scopedcss\bundle\Shop.styles.css
