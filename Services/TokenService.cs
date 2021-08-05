@@ -15,7 +15,7 @@ namespace Shop.Services
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor //Descrição do token
             {
-                Subject = new ClaimsIdentity(new Claim[]
+                Subject = new ClaimsIdentity(new Claim[] //Claim são as informações que estarão contidas no Token
                 {
                     new Claim(ClaimTypes.Name, user.Id.ToString()),
                     new Claim(ClaimTypes.Role, user.Role.ToString())

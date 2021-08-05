@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shop.Data;
@@ -12,6 +13,7 @@ public class ProductController : ControllerBase
 {
     [HttpGet]
     [Route("")]
+    [AllowAnonymous]
     public async Task<ActionResult<List<Product>>> Get(
         [FromServices] DataContext context
     )
@@ -22,6 +24,7 @@ public class ProductController : ControllerBase
 
     [HttpGet]
     [Route("{id:int}")]
+    [AllowAnonymous]
     public async Task<ActionResult<Product>> GetById(
         int id,
         [FromServices] DataContext context
@@ -33,6 +36,7 @@ public class ProductController : ControllerBase
 
     [HttpGet] //products/categories/Id da categoria
     [Route("categories/{id:int}")]
+    [AllowAnonymous]
     public async Task<ActionResult<Product>> GetByCategory( //Get utilizado para listar todos os produtos de acordo com o Id da categoria passado
         int id,
         [FromServices] DataContext context
@@ -44,6 +48,7 @@ public class ProductController : ControllerBase
 
     [HttpPost]
     [Route("")]
+    [Authorize(Roles = "employee")]
     public async Task<ActionResult<Product>> Post(
         [FromBody]Product model,
         [FromServices]DataContext context
@@ -66,6 +71,7 @@ public class ProductController : ControllerBase
 
     [HttpPut]
     [Route("{id:int}")]
+    [Authorize(Roles = "manager")]
     public async Task<ActionResult<Product>> Put(
         int id,
         [FromBody]Product model,
@@ -96,6 +102,7 @@ public class ProductController : ControllerBase
 
     [HttpDelete]
     [Route("{id:int}")]
+    [Authorize(Roles = "manager")]
     public async Task<ActionResult<Product>> Delete(
         int id,
         [FromServices]DataContext context
