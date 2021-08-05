@@ -17,7 +17,7 @@ namespace Shop.Services
             {
                 Subject = new ClaimsIdentity(new Claim[] //Claim são as informações que estarão contidas no Token
                 {
-                    new Claim(ClaimTypes.Name, user.Id.ToString()),
+                    new Claim(ClaimTypes.Name, user.Name.ToString()),
                     new Claim(ClaimTypes.Role, user.Role.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(2),
